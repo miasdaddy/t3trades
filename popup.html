@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="ag-grid-community.js"></script>
+  <script src="app.js"></script>
+  <style>
+    body {
+      font-family: Algerian;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>T3 Trades</h2>
+  <div class="container"><span id="num">Total records: </span></div>
+  <div>
+    <label><input type="radio" name="filter" id="filter-all" />All</label>
+    <label><input type="radio" name="filter" id="filter-scott" />Scott</label>
+    <label><input type="radio" name="filter" id="filter-dan" />Dan</label>
+    <label><input type="radio" name="filter" id="filter-calls" />Calls</label>
+    <label><input type="radio" name="filter" id="filter-puts" />Puts</label>
+  </div>
+
+  <div id="myGrid" style="height: 500px; width:750px;" class="ag-theme-alpine-dark"></div>
+  <p id="data"></p>
+
+</body>
+
+</html>
